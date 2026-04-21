@@ -21,8 +21,8 @@ import java.security.cert.X509Certificate;
 public class PaymentGateway {
 
     private static final String API_URL = "https://pgpayuat.icicibank.com/tsp/pg/api/v2/initiateSale"; // Placeholder URL
-    private static final String API_KEY = "db06cca0-838b-4e01-8b20-6ac446ffb6bd"; // Replace with actual API key
-    //private static final String SECRET_KEY = "100000000007164"; // Replace with actual secret key
+    private static final String API_KEY = ""; // Replace with actual API key
+    //private static final String SECRET_KEY = ""; // Replace with actual secret key
 
     public String initiatePayment(Long merchantId, String aggregatorID, String merchantTxnNo, Double amount, Integer currencyCode, Integer payType, String customerEmailID, String transactionType, String returnURL, Long txnDate, String customerMobileNo, String customerName, String addlParam1, String addlParam2) throws IOException {
         String secureHash = generateSecureHash(addlParam1, addlParam2, aggregatorID, amount, currencyCode, customerEmailID, customerMobileNo, customerName, merchantId, merchantTxnNo, payType, returnURL, transactionType, txnDate);

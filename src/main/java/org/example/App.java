@@ -21,8 +21,8 @@ public class App
             String merchantTxnNo = "A" + txnDate; // Unique merchant transaction number
 
             String paymentUrl = gateway.initiatePayment(
-                    100000000007164L,
-                "A100000000007164",
+                    100000000008164L,
+                "A100000000008164",
                 merchantTxnNo,
                 100.00,
                 356,
